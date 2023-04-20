@@ -89,7 +89,7 @@ async function getBotResponse(message) {
 
 
     const sendMessageToBackend = async (message) => {
-        const response = await fetch("http://localhost:8000/chat", {
+        const response = await fetch("http://10.12.69.252:8000/chat", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
