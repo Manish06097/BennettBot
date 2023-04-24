@@ -73,7 +73,7 @@ function createLoadingElement() {
 
 async function getBotResponse(message) {
     // Simulate a delay for the bot response
-    const response = await fetch("http://13.127.235.246:80/chat", {
+    const response = await fetch("https://13.127.235.246:80/chat", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -89,7 +89,7 @@ async function getBotResponse(message) {
 
 
     const sendMessageToBackend = async (message) => {
-        const response = await fetch("http://13.127.235.246:80/chat", {
+        const response = await fetch("https://13.127.235.246:80/chat", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
